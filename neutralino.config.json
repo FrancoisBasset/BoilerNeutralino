@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"defaultMode": "window",
 	"port": 0,
-	"documentRoot": "/vue-src/dist",
+	"documentRoot": "/resources",
 	"url": "/",
 	"enableServer": true,
 	"enableNativeAPI": true,
@@ -28,21 +28,26 @@
 			"center": true,
 			"fullScreen": false,
 			"alwaysOnTop": false,
-			"icon": "/resources/icons/appIcon.png",
+			"icon": "/resources/favicon.ico",
 			"enableInspector": false,
 			"borderless": false,
 			"maximize": false,
 			"hidden": false,
 			"resizable": true,
 			"exitProcessOnClose": false
+			
 		}
 	},
 	"cli": {
 		"binaryName": "addition",
-		"resourcesPath": "/vue-src/dist/",
+		"resourcesPath": "/resources",
 		"extensionsPath": "/extensions/",
 		"clientLibrary": "/resources/js/neutralino.js",
 		"binaryVersion": "6.2.0",
-		"clientVersion": "6.2.0"
+		"clientVersion": "6.2.0",
+		"frontendLibrary": {
+			"patchFile": "/vue-src/index.html",
+			"devUrl": "http://localhost:5173"
+		}
 	}
 }

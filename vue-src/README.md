@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Using the Neutralino desktop build
+
+When running this project via Neutralino, you can close the application using
+the **Quit** button on the home page. The button calls
+`window.Neutralino.app.exit()` under the hood.
